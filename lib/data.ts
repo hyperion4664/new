@@ -762,21 +762,21 @@ const data: Data = {
   carousels: [
     {
       title: 'Popüler 3D Maketler',
-      buttonCaption: 'Shop Now',
+      buttonCaption: 'Görüntüle',
       image: '/images/banner3.jpg',
       url: '/search?category=Shoes',
       isPublished: true,
     },
     {
       title: 'Hayallerinizdeki Görselin 3D Maketini Alın',
-      buttonCaption: 'Shop Now',
+      buttonCaption: 'Görüntüle',
       image: '/images/banner1.jpg',
       url: '/search?category=T-Shirts',
       isPublished: true,
     },
     {
       title: '3D Maketlerimiz',
-      buttonCaption: 'See More',
+      buttonCaption: 'Görüntüle',
       image: '/images/banner2.jpg',
       url: '/search?category=Wrist Watches',
       isPublished: true,

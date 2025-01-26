@@ -1,37 +1,40 @@
-import { HomeCard } from '@/components/shared/home/home-card'
-import { HomeCarousel } from '@/components/shared/home/home-carousel'
-import { toSlug } from '@/lib/utils'
-import { getAllCategories, getProductsForCard } from '@/lib/actions/product.actions'
-import data from '@/lib/data'
-
-
-
+import { HomeCard } from "@/components/shared/home/home-card";
+import { HomeCarousel } from "@/components/shared/home/home-carousel";
+import { toSlug } from "@/lib/utils";
+import {
+  getAllCategories,
+  getProductsForCard,
+  getProductsByTag,
+} from "@/lib/actions/product.actions";
+import data from "@/lib/data";
+import { Card, CardContent } from '@/components/ui/card'
+import ProductSlider from '@/components/shared/product/product-slider'
 
 
 
 export default async function HomePage() {
-  const categories = (await getAllCategories()).slice(0, 4)
-  const newArrivals = await getProductsForCard({
-    tag: 'new-arrival',
-    limit: 4,
-  })
-  const featureds = await getProductsForCard({
-    tag: 'featured',
-    limit: 4,
-  })
-  const bestSellers = await getProductsForCard({
-    tag: 'best-seller',
-    limit: 4,
-  })
+  const todaysDeals = await getProductsByTag({ tag: "todays-deal" });
 
-  
+  const categories = (await getAllCategories()).slice(0, 4);
+  const newArrivals = await getProductsForCard({
+    tag: "new-arrival",
+    limit: 4,
+  });
+  const featureds = await getProductsForCard({
+    tag: "featured",
+    limit: 4,
+  });
+  const bestSellers = await getProductsForCard({
+    tag: "best-seller",
+    limit: 4,
+  });
 
   const cards = [
     {
-      title: 'Categories to explore',
+      title: "Kategorileri Keşfedin",
       link: {
-        text: 'See More',
-        href: '/search',
+        text: "Daha Fazla Görüntüle",
+        href: "/search",
       },
       items: categories.map((category) => ({
         name: category,
@@ -40,37 +43,42 @@ export default async function HomePage() {
       })),
     },
     {
-      title: 'Explore New Arrivals',
+      title: "Yeni Gelenler",
       items: newArrivals,
       link: {
-        text: 'View All',
-        href: '/search?tag=new-arrival',
+        text: "Daha Fazla Görüntüle",
+        href: "/search?tag=new-arrival",
       },
     },
     {
-      title: 'Discover Best Sellers',
+      title: "En Çok Satanlar",
       items: bestSellers,
       link: {
-        text: 'View All',
-        href: '/search?tag=best-seller',
+        text: "Daha Fazla Görüntüle",
+        href: "/search?tag=best-seller",
       },
     },
     {
-      title: 'Featured Products',
+      title: "Öne Çıkan Ürünler",
       items: featureds,
       link: {
-        text: 'Shop Now',
-        href: '/search?tag=featured',
+        text: "Daha Fazla Görüntüle",
+        href: "/search?tag=featured",
       },
     },
-  ]
+  ];
 
   return (
     <>
-       <HomeCarousel items={data.carousels} />
-      <div className='md:p-4 md:space-y-4 bg-border'>
+      <HomeCarousel items={data.carousels} />
+      <div className="md:p-4 md:space-y-4 bg-border">
         <HomeCard cards={cards} />
+        <Card className='w-full rounded-none'>
+          <CardContent className='p-4 items-center gap-3'>
+            <ProductSlider title={"Bugünün Fırsatları"} products={todaysDeals} />
+          </CardContent>
+        </Card>
       </div>
     </>
-  )         
+  );
 }
