@@ -7,13 +7,12 @@ import {
   getProductsByTag,
 } from "@/lib/actions/product.actions";
 import data from "@/lib/data";
-import { Card, CardContent } from '@/components/ui/card'
-import ProductSlider from '@/components/shared/product/product-slider'
-
-
+import { Card, CardContent } from "@/components/ui/card";
+import ProductSlider from "@/components/shared/product/product-slider";
 
 export default async function HomePage() {
   const todaysDeals = await getProductsByTag({ tag: "todays-deal" });
+  const bestSellingProducts = await getProductsByTag({ tag: "best-seller" });
 
   const categories = (await getAllCategories()).slice(0, 4);
   const newArrivals = await getProductsForCard({
@@ -73,9 +72,22 @@ export default async function HomePage() {
       <HomeCarousel items={data.carousels} />
       <div className="md:p-4 md:space-y-4 bg-border">
         <HomeCard cards={cards} />
-        <Card className='w-full rounded-none'>
-          <CardContent className='p-4 items-center gap-3'>
-            <ProductSlider title={"Bugünün Fırsatları"} products={todaysDeals} />
+        <Card className="w-full rounded-none">
+          <CardContent className="p-4 items-center gap-3">
+            <ProductSlider
+              title={"Bugünün Fırsatları"}
+              products={todaysDeals}
+            />
+          </CardContent>
+        </Card>
+
+        <Card className="w-full rounded-none">
+          <CardContent className="p-4 items-center gap-3">
+            <ProductSlider
+              title="En Çok Satanlar"
+              products={bestSellingProducts}
+              hideDetails
+            />
           </CardContent>
         </Card>
       </div>
