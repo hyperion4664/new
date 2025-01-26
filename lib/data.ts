@@ -1,38 +1,38 @@
 const data = {
-    headerMenus: [
-      {
-        name: "Today's Deal",
-        href: '/search?tag=todays-deal',
-      },
-      {
-        name: 'New Arrivals',
-        href: '/search?tag=new-arrival',
-      },
-      {
-        name: 'Featured Products',
-        href: '/search?tag=featured',
-      },
-      {
-        name: 'Best Sellers',
-        href: '/search?tag=best-seller',
-      },
-      {
-        name: 'Browsing History',
-        href: '/#browsing-history',
-      },
-      {
-        name: 'Customer Service',
-        href: '/page/customer-service',
-      },
-      {
-        name: 'About Us',
-        href: '/page/about-us',
-      },
-      {
-        name: 'Help',
-        href: '/page/help',
-      },
-    ],
-  }
-  
-  export default data
+  headerMenus: [
+    {
+      name: "Günün Fırsatı",
+      href: "/search?tag=todays-deal",
+    },
+    {
+      name: "Yeni Gelenler",
+      href: "/search?tag=new-arrival",
+    },
+    {
+      name: "Öne Çıkan Ürünler",
+      href: "/search?tag=featured",
+    },
+    {
+      name: "En Çok Satanlar",
+      href: "/search?tag=best-seller",
+    },
+    {
+      name: "Gezinme Geçmişi",
+      href: "/#browsing-history",
+    },
+    {
+      name: "Müşteri Hizmetleri",
+      href: "/page/customer-service",
+    },
+    {
+      name: "Hakkımızda",
+      href: "/page/about-us",
+    },
+    {
+      name: "Yardım",
+      href: "/page/help",
+    },
+  ],
+};
+
+export default data;
