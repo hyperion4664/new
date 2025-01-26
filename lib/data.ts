@@ -1,18 +1,18 @@
 import { Data, IProductInput } from "@/types";
 import { toSlug } from "./utils";
 
+
 const products: IProductInput[] = [
-  // T-Shirts
   {
-    name: "Nike Mens Slim-fit Long-Sleeve T-Shirt",
-    slug: toSlug("Nike Mens Slim-fit Long-Sleeve T-Shirt"),
-    category: "T-Shirts",
-    images: ["/images/p11-1.jpg", "/images/p11-2.jpg"],
-    tags: ["new-arrival"],
+    name: 'Nike Mens Slim-fit Long-Sleeve T-Shirt',
+    slug: toSlug('Nike Mens Slim-fit Long-Sleeve T-Shirt'),
+    category: 'T-Shirts',
+    images: ['/images/p11-1.jpg', '/images/p11-2.jpg'],
+    tags: ['new-arrival'],
     isPublished: true,
     price: 21.8,
     listPrice: 0,
-    brand: "Nike",
+    brand: 'Nike',
     avgRating: 4.71,
     numReviews: 7,
     ratingDistribution: [
@@ -25,27 +25,27 @@ const products: IProductInput[] = [
     numSales: 9,
     countInStock: 11,
     description:
-      "İnsan sağlığına ve çevreye zarar vermeyen kimyasallar kullanılarak üretilmiştir.",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Beyaz", "Kırmızı", "Siyah"],
+      'Made with chemicals safer for human health and the environment',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    colors: ['Green', 'Red', 'Black'],
 
     reviews: [],
   },
   {
-    name: "Jerzees Long-Sleeve Heavyweight Blend T-Shirt",
-    slug: toSlug("Jerzees Long-Sleeve Heavyweight Blend T-Shirt"),
-    category: "T-Shirts",
+    name: 'Jerzees Long-Sleeve Heavyweight Blend T-Shirt',
+    slug: toSlug('Jerzees Long-Sleeve Heavyweight Blend T-Shirt'),
+    category: 'T-Shirts',
     images: [
-      "/images/p12-1.jpg",
-      "/images/p12-2.jpg",
-      "/images/p12-3.jpg",
-      "/images/p12-4.jpg",
+      '/images/p12-1.jpg',
+      '/images/p12-2.jpg',
+      '/images/p12-3.jpg',
+      '/images/p12-4.jpg',
     ],
-    tags: ["featured"],
+    tags: ['featured'],
     isPublished: true,
     price: 23.78,
     listPrice: 0,
-    brand: "Jerzees",
+    brand: 'Jerzees',
     avgRating: 4.2,
     numReviews: 10,
     ratingDistribution: [
@@ -58,20 +58,20 @@ const products: IProductInput[] = [
     numSales: 29,
     countInStock: 12,
     description:
-      "Sürdürülebilir kaynaklanan Amerika Birleşik Devletleri tarafından yetiştirilen pamuk; Kol-kol arası bant; çift-ayaklı ön yaka; Set-in kol; Gizli dikişli yaka kıyafetleri; Geniş baskı alanı için kabiliyetli gövde",
+      'Made with sustainably sourced USA grown cotton; Shoulder-to-shoulder tape; double-needle coverstitched front neck; Set-in sleeves; Rib cuffs with concealed seams; Seamless body for a wide printing area',
 
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Sarı", "Kırmızı", "Siyah"],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    colors: ['Yellow', 'Red', 'Black'],
 
     reviews: [],
   },
   {
     name: "Jerzees Men's Long-Sleeve T-Shirt",
-    slug: toSlug("Jerzees Men Long-Sleeve T-Shirt"),
-    category: "T-Shirts",
-    brand: "Jerzees",
-    images: ["/images/p13-1.jpg", "/images/p13-2.jpg"],
-    tags: ["best-seller"],
+    slug: toSlug('Jerzees Men Long-Sleeve T-Shirt'),
+    category: 'T-Shirts',
+    brand: 'Jerzees',
+    images: ['/images/p13-1.jpg', '/images/p13-2.jpg'],
+    tags: ['best-seller'],
     isPublished: true,
     price: 13.86,
     listPrice: 16.03,
@@ -87,21 +87,21 @@ const products: IProductInput[] = [
     numSales: 55,
     countInStock: 13,
     description:
-      "Jerzees uzun kollu t-shirt, dri-power teknolojisiyle üretilmiştir. Bu teknoloji, nemin hapsolmasını sağlayarak günün her anında sıcak ve kuru kalmanıza olanak tanır. Ayrıca, ekstra dayanıklılık için rib kol ve yaka kısmı da dahil edilmiştir. Eğer birçok mevsim için kullanılabilir bir kıyafet arıyorsanız, o zaman daha fazla arama yapmayın.",
-    sizes: ["XL", "XXL"],
-    colors: ["Yeşil", "Beyaz"],
+      'The Jerzees long sleeve t-shirt is made with dri-power technology that wicks away moisture to keep you cool and dry throughout your day. We also included a rib collar and cuffs for added durability, and a lay-flat collar for comfort. If you are looking for a versatile shirt that you can wear throughout the transitioning seasons, then look no further.',
+    sizes: ['XL', 'XXL'],
+    colors: ['Green', 'White'],
 
     reviews: [],
   },
   {
-    name: "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts",
+    name: 'Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts',
     slug: toSlug(
-      "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts"
+      'Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts'
     ),
-    category: "T-Shirts",
-    brand: "Jerzees",
-    images: ["/images/p14-1.jpg", "/images/p14-2.jpg"],
-    tags: ["todays-deal"],
+    category: 'T-Shirts',
+    brand: 'Jerzees',
+    images: ['/images/p14-1.jpg', '/images/p14-2.jpg'],
+    tags: ['todays-deal'],
     isPublished: true,
     price: 26.95,
     listPrice: 46.03,
@@ -117,9 +117,9 @@ const products: IProductInput[] = [
     numSales: 54,
     countInStock: 14,
     description:
-      "Buftunuzu buftunuzla geliştirin. Bu uzun kollu t-shirt, sıradan pamuk t-shirtinizden en üst seviyeye taşıyor.",
-    sizes: ["XL", "XXL"],
-    colors: ["Sarı", "Beyaz"],
+      'Elevate your outfit with this soft long sleeve t shirt men. This full sleeves tee is the ultimate upgrade from your regular cotton t-shirt. ',
+    sizes: ['XL', 'XXL'],
+    colors: ['Yellow', 'White'],
 
     reviews: [],
   },
@@ -128,10 +128,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt"
     ),
-    category: "T-Shirts",
-    brand: " Muscle Cmdr",
-    images: ["/images/p15-1.jpg", "/images/p15-2.jpg"],
-    tags: ["new-arrival", "featured"],
+    category: 'T-Shirts',
+    brand: ' Muscle Cmdr',
+    images: ['/images/p15-1.jpg', '/images/p15-2.jpg'],
+    tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 29.99,
     listPrice: 35.99,
@@ -147,19 +147,19 @@ const products: IProductInput[] = [
     numSales: 54,
     countInStock: 15,
     description:
-      "İnce Kesim Tasarım: Erkek Kas İnce Kesim Düğmeli Henley Gömlekleri, vücudunuza tam oturacak şekilde tasarlanmıştır, kaslarınızı vurgular ve her ortam için mükemmel olan şık bir siluet oluşturur.",
-    sizes: ["XL", "XXL"],
-    colors: ["Yeşil", "Sarı"],
+      "Slim Fit Design:Men's Muscle Slim Fit Button Henley Shirts are designed to fit snugly against your body, accentuating your muscles and creating a sleek silhouette that's perfect for any occasion. ",
+    sizes: ['XL', 'XXL'],
+    colors: ['Green', 'Yellow'],
 
     reviews: [],
   },
   {
-    name: "Hanes Mens Long Sleeve Beefy Henley Shirt",
-    slug: toSlug("Hanes Mens Long Sleeve Beefy Henley Shirt"),
-    category: "T-Shirts",
-    brand: "Jerzees",
-    images: ["/images/p16-1.jpg", "/images/p16-2.jpg"],
-    tags: ["best-seller", "todays-deal"],
+    name: 'Hanes Mens Long Sleeve Beefy Henley Shirt',
+    slug: toSlug('Hanes Mens Long Sleeve Beefy Henley Shirt'),
+    category: 'T-Shirts',
+    brand: 'Jerzees',
+    images: ['/images/p16-1.jpg', '/images/p16-2.jpg'],
+    tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 25.3,
     listPrice: 32.99,
@@ -175,20 +175,20 @@ const products: IProductInput[] = [
     countInStock: 16,
     numSales: 56,
     description:
-      "Ağırlıklı pamuk (Heathers 60% pamuk/40% polyester; Pebblestone 75% pamuk/25% polyester)",
-    sizes: ["XL", "XXL"],
-    colors: ["Gri", "Beyaz"],
+      'Heavyweight cotton (Heathers are 60% cotton/40% polyester; Pebblestone is 75% cotton/25% polyester)',
+    sizes: ['XL', 'XXL'],
+    colors: ['Grey', 'White'],
 
     reviews: [],
   },
   // Jeans
   {
-    name: "Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans",
-    slug: toSlug("Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans"),
-    category: "Jeans",
-    brand: "Silver Jeans Co",
-    images: ["/images/p21-1.jpg", "/images/p21-2.jpg"],
-    tags: ["new-arrival"],
+    name: 'Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans',
+    slug: toSlug('Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans'),
+    category: 'Jeans',
+    brand: 'Silver Jeans Co',
+    images: ['/images/p21-1.jpg', '/images/p21-2.jpg'],
+    tags: ['new-arrival'],
     isPublished: true,
     price: 95.34,
     listPrice: 0,
@@ -204,9 +204,9 @@ const products: IProductInput[] = [
     countInStock: 54,
     numSales: 21,
     description:
-      "Silver Jeans Co. Jace Slim Fit Bootcut Jeans - Jace, modern cowboy jean olarak düşünün. Aşağıda omurga ve hip ve bilek bölgesinde ince bir fit ile bitirilmiştir. 18\" bootcut leg opening ile daha ince görünümünü tamamlarken, büyük botların üzerinde de uyum sağlar",
-    sizes: [ "36Wx30L"],
-    colors: ["Mavi", "Gri"],
+      'Silver Jeans Co. Jace Slim Fit Bootcut Jeans - Consider Jace a modern cowboy jean. It sits below the waist and features a slim fit through the hip and thigh. Finished with an 18” bootcut leg opening that complements the slimmer silhouette while still fitting over boots',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Blue', 'Grey'],
 
     reviews: [],
   },
@@ -215,10 +215,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall)"
     ),
-    category: "Jeans",
+    category: 'Jeans',
     brand: "Levi's",
-    images: ["/images/p22-1.jpg", "/images/p22-2.jpg"],
-    tags: ["featured"],
+    images: ['/images/p22-1.jpg', '/images/p22-2.jpg'],
+    tags: ['featured'],
     isPublished: true,
     price: 59.99,
     listPrice: 69.99,
@@ -233,19 +233,20 @@ const products: IProductInput[] = [
     ],
     countInStock: 22,
     numSales: 54,
-    description: "Birçok mevsim için kullanılabilir bir kıyafet, bu 505.",
-    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
-    colors: ["Mavi", "Gri"],
+    description:
+      'A veritable classic, this 505 is made to have a comfortable look and style.',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Blue', 'Grey'],
 
     reviews: [],
   },
   {
-    name: "Essentials Mens Straight-Fit Stretch Jean",
-    slug: toSlug("Essentials Mens Straight-Fit Stretch Jean"),
-    category: "Jeans",
-    brand: "Essentials",
-    images: ["/images/p23-1.jpg", "/images/p23-2.jpg"],
-    tags: ["best-seller"],
+    name: 'Essentials Mens Straight-Fit Stretch Jean',
+    slug: toSlug('Essentials Mens Straight-Fit Stretch Jean'),
+    category: 'Jeans',
+    brand: 'Essentials',
+    images: ['/images/p23-1.jpg', '/images/p23-2.jpg'],
+    tags: ['best-seller'],
     isPublished: true,
     price: 38.9,
     listPrice: 45,
@@ -261,9 +262,9 @@ const products: IProductInput[] = [
     countInStock: 23,
     numSales: 54,
     description:
-      "Bu klasik 5-pocket straight-fit jeans, ekstra rahatlık ve şekil koruma için biraz esneklik içerir",
-    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
-    colors: ["Gri", "Mavi"],
+      'These classic 5-pocket straight-fit jeans are crafted with a bit of stretch for additional comfort and to help maintain their shape',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Grey', 'Blue'],
 
     reviews: [],
   },
@@ -272,10 +273,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans"
     ),
-    category: "Jeans",
-    brand: "Buffalo David Bitton",
-    images: ["/images/p24-1.jpg", "/images/p24-2.jpg"],
-    tags: ["todays-deal"],
+    category: 'Jeans',
+    brand: 'Buffalo David Bitton',
+    images: ['/images/p24-1.jpg', '/images/p24-2.jpg'],
+    tags: ['todays-deal'],
     isPublished: true,
     price: 69.99,
     listPrice: 100,
@@ -291,19 +292,19 @@ const products: IProductInput[] = [
     countInStock: 24,
     numSales: 53,
     description:
-      "Stretch recycled denim jeans in an authentic and sanded wash blue. Features a comfortable low-rise waist with a relaxed fit at the leg. The distressed look gives these jeans an effortlessly worn-in feel. The eco-friendly logo patch in tan and red is at the back waistband. The signature maple leaf graphic is debossed at the zip-fly.",
-    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
-    colors: ["Mavi", "Gri"],
+      'Stretch recycled denim jeans in an authentic and sanded wash blue. Features a comfortable low-rise waist with a relaxed fit at the leg. The distressed look gives these jeans an effortlessly worn-in feel. The eco-friendly logo patch in tan and red is at the back waistband. The signature maple leaf graphic is debossed at the zip-fly.',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Blue', 'Grey'],
 
     reviews: [],
   },
   {
-    name: "Dickies Mens Relaxed Fit Carpenter Jean",
-    slug: toSlug("Dickies Mens Relaxed Fit Carpenter Jean"),
-    category: "Jeans",
-    brand: "Dickies",
-    images: ["/images/p25-1.jpg", "/images/p25-2.jpg"],
-    tags: ["new-arrival", "featured"],
+    name: 'Dickies Mens Relaxed Fit Carpenter Jean',
+    slug: toSlug('Dickies Mens Relaxed Fit Carpenter Jean'),
+    category: 'Jeans',
+    brand: 'Dickies',
+    images: ['/images/p25-1.jpg', '/images/p25-2.jpg'],
+    tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 95.34,
     listPrice: 0,
@@ -319,19 +320,19 @@ const products: IProductInput[] = [
     countInStock: 25,
     numSales: 48,
     description:
-      "Rahat çalışma jean, eski carpentry-stil çalışma çantası ve logo çalışma çantası",
-    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
-    colors: ["Mavi", "Gri"],
+      'Relaxed work jean with traditional carpenter-style pockets and logo patch at back pockets',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Blue', 'Grey'],
 
     reviews: [],
   },
   {
-    name: "Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean",
-    slug: toSlug("Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean"),
-    category: "Jeans",
-    brand: "Wrangler",
-    images: ["/images/p26-1.jpg", "/images/p26-2.jpg"],
-    tags: ["best-seller", "todays-deal"],
+    name: 'Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean',
+    slug: toSlug('Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean'),
+    category: 'Jeans',
+    brand: 'Wrangler',
+    images: ['/images/p26-1.jpg', '/images/p26-2.jpg'],
+    tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 81.78,
     listPrice: 149.99,
@@ -347,9 +348,9 @@ const products: IProductInput[] = [
     countInStock: 26,
     numSales: 48,
     description:
-      "İşlevsel bir fit için tasarlanmıştır, bu jeanlar sizin en sevdiğiniz çift botlarınızın üzerine yığılır. Düşük omurga, koltuk ve bilek bölgesinde ince bir fit ile yapılmıştır, bu jean hem işlev hem de rahatlık için uzun günler için yapılmıştır.",
-    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
-    colors: ["Mavi", "Gri"],
+      'Designed with a functional fit in mind, these jeans are made to stack over your favorite pair of boots. Constructed with a slim fit in the waist, seat, and thigh, this jean is made for both function and comfort for long days in the saddle.',
+    sizes: ['30Wx30L', '34Wx30L', '36Wx30L'],
+    colors: ['Blue', 'Grey'],
 
     reviews: [],
   },
@@ -357,10 +358,10 @@ const products: IProductInput[] = [
   {
     name: "Seiko Men's Analogue Watch with Black Dial",
     slug: toSlug("Seiko Men's Analogue Watch with Black Dial"),
-    category: "Wrist Watches",
-    brand: "Seiko",
-    images: ["/images/p31-1.jpg", "/images/p31-2.jpg"],
-    tags: ["new-arrival"],
+    category: 'Wrist Watches',
+    brand: 'Seiko',
+    images: ['/images/p31-1.jpg', '/images/p31-2.jpg'],
+    tags: ['new-arrival'],
     isPublished: true,
     price: 530.0,
     listPrice: 0,
@@ -376,21 +377,21 @@ const products: IProductInput[] = [
     countInStock: 31,
     numSales: 48,
     description:
-      "Kasalı: Stentanlı kasalı, yuvarlak kasalı, gri cam: Hardlex, kasalı tip: kasalı, kasalı",
+      'Casing: Case made of stainless steel Case shape: round Case colour: silver Glass: Hardlex Clasp type: Fold over clasp with safety',
     sizes: [],
     colors: [],
 
     reviews: [],
   },
   {
-    name: "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch",
+    name: 'SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch',
     slug: toSlug(
-      "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch"
+      'SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch'
     ),
-    category: "Wrist Watches",
-    brand: "Seiko",
-    images: ["/images/p32-1.jpg", "/images/p32-2.jpg"],
-    tags: ["featured"],
+    category: 'Wrist Watches',
+    brand: 'Seiko',
+    images: ['/images/p32-1.jpg', '/images/p32-2.jpg'],
+    tags: ['featured'],
     isPublished: true,
     price: 375.83,
     listPrice: 400,
@@ -406,7 +407,7 @@ const products: IProductInput[] = [
     countInStock: 32,
     numSales: 48,
     description:
-      "Seiko 5 Sporlarının koleksiyonu, vintage alan/aviator stili: otomatik, manuel sarkıtma yeteneği",
+      'Seiko 5 Sports Collection Inspired by vintage field/aviator style: Automatic with manual winding capability',
     sizes: [],
     colors: [],
 
@@ -417,10 +418,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch"
     ),
-    category: "Wrist Watches",
-    brand: "Casio",
-    images: ["/images/p33-1.jpg", "/images/p33-2.jpg"],
-    tags: ["best-seller"],
+    category: 'Wrist Watches',
+    brand: 'Casio',
+    images: ['/images/p33-1.jpg', '/images/p33-2.jpg'],
+    tags: ['best-seller'],
     isPublished: true,
     price: 60.78,
     listPrice: 0,
@@ -436,21 +437,21 @@ const products: IProductInput[] = [
     countInStock: 33,
     numSales: 48,
     description:
-      "Casio koleksiyonu, bu model MWA-100H-1AVEF ile büyüyor. Stentanlı bir kasalı ile, her günlük şoklara dayanıklı olacaktır.",
+      'The Casio range is growing with this model  MWA-100H-1AVEF. Sporting a stainless steel case with a brushed finish, it will easily withstand all the shocks of everyday life.',
     sizes: [],
     colors: [],
 
     reviews: [],
   },
   {
-    name: "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch",
+    name: 'Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch',
     slug: toSlug(
-      "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch"
+      'Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch'
     ),
-    category: "Wrist Watches",
-    brand: "Casio",
-    images: ["/images/p34-1.jpg", "/images/p34-2.jpg"],
-    tags: ["todays-deal"],
+    category: 'Wrist Watches',
+    brand: 'Casio',
+    images: ['/images/p34-1.jpg', '/images/p34-2.jpg'],
+    tags: ['todays-deal'],
     isPublished: true,
     price: 34.22,
     listPrice: 54.99,
@@ -466,7 +467,7 @@ const products: IProductInput[] = [
     countInStock: 34,
     numSales: 48,
     description:
-      "Yeni MTPVD01D-7EV, 50 metre su direnceli stentanlı bir kasalı, beyaz görünümüyle güncellenmiştir. Bu elegans 3 el saat, herhangi bir ortamda mükemmeldir.",
+      'The new MTPVD01D-7EV is a classic 50 meter water resistant stainless steel watch now updated with a white dial. This elegant 3 hand, date display timepiece is perfect for any setting.',
     sizes: [],
     colors: [],
 
@@ -475,10 +476,10 @@ const products: IProductInput[] = [
   {
     name: "Fossil Men's Grant Stainless Steel Quartz Chronograph Watch",
     slug: toSlug("Fossil Men's Grant Stainless Steel Quartz Chronograph Watch"),
-    category: "Wrist Watches",
-    brand: "Fossil",
-    images: ["/images/p35-1.jpg", "/images/p35-2.jpg"],
-    tags: ["new-arrival", "featured"],
+    category: 'Wrist Watches',
+    brand: 'Fossil',
+    images: ['/images/p35-1.jpg', '/images/p35-2.jpg'],
+    tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 171.22,
     listPrice: 225,
@@ -494,19 +495,19 @@ const products: IProductInput[] = [
     countInStock: 35,
     numSales: 48,
     description:
-      "Süreklilik görünümü ile, gümüş ve mavi görünümü kasalı, mavi güneş yıldızı görünümü ve gümüş görünümü Roma rakamları",
+      'Chronograph watch featuring silver- and blue-tone case, blue sunray dial, and silver-tone Roman numeral indices',
     sizes: [],
-    colors: ["Mavi", "Siyah", "Gümüş"],
+    colors: ['Blue', 'Black', 'Sliver'],
 
     reviews: [],
   },
   {
     name: "Fossil Men's Machine Stainless Steel Quartz Watch",
     slug: toSlug("Fossil Men's Machine Stainless Steel Quartz Watch"),
-    category: "Wrist Watches",
-    brand: "Fossil",
-    images: ["/images/p36-1.jpg", "/images/p36-2.jpg"],
-    tags: ["best-seller", "todays-deal"],
+    category: 'Wrist Watches',
+    brand: 'Fossil',
+    images: ['/images/p36-1.jpg', '/images/p36-2.jpg'],
+    tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 158.21,
     listPrice: 229.0,
@@ -522,20 +523,20 @@ const products: IProductInput[] = [
     countInStock: 36,
     numSales: 49,
     description:
-      "Masculin siyah-siyah, endüstriyel etkilenmiş bir makine saati, sizin günlük görünümünüze yeni, modern bir dokunuş katacaktır. Bu makine saati, stentanlı bir bilek bantı ile üç el hareketi de içerir.",
+      'In masculine black-on-black, our industrial-inspired Machine watch will add a fresh, modern touch to your casual look. This Machine watch also features a three hand movement on a stainless steel bracelet.',
     sizes: [],
-    colors: ["Kahverengi", "Gümüş", "Siyah"],
+    colors: ['Brown', 'Sliver', 'Black'],
 
     reviews: [],
   },
   // Sneakers
   {
-    name: "adidas Mens Grand Court 2.0 Training Shoes Training Shoes",
-    slug: toSlug("adidas Mens Grand Court 2.0 Training Shoes Training Shoes"),
-    category: "Shoes",
-    brand: "adidas",
-    images: ["/images/p41-1.jpg", "/images/p41-2.jpg"],
-    tags: ["new-arrival"],
+    name: 'adidas Mens Grand Court 2.0 Training Shoes Training Shoes',
+    slug: toSlug('adidas Mens Grand Court 2.0 Training Shoes Training Shoes'),
+    category: 'Shoes',
+    brand: 'adidas',
+    images: ['/images/p41-1.jpg', '/images/p41-2.jpg'],
+    tags: ['new-arrival'],
     isPublished: true,
     price: 81.99,
     listPrice: 0,
@@ -551,9 +552,9 @@ const products: IProductInput[] = [
     countInStock: 41,
     numSales: 48,
     description:
-      "Cloudfoam Comfort sockliner, çokftan ve çokftan, yumuşak, soluk hava geçirgen kumaş",
-    sizes: ["8", "9", "10"],
-    colors: ["Beyaz", "Siyah", "Gri"],
+      'Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh',
+    sizes: ['8', '9', '10'],
+    colors: ['White', 'Black', 'Grey'],
 
     reviews: [],
   },
@@ -562,10 +563,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes"
     ),
-    category: "Shoes",
-    brand: "ziitop",
-    images: ["/images/p42-1.jpg", "/images/p42-2.jpg"],
-    tags: ["featured"],
+    category: 'Shoes',
+    brand: 'ziitop',
+    images: ['/images/p42-1.jpg', '/images/p42-2.jpg'],
+    tags: ['featured'],
     isPublished: true,
     price: 39.97,
     listPrice: 49.96,
@@ -581,21 +582,21 @@ const products: IProductInput[] = [
     countInStock: 42,
     numSales: 50,
     description:
-      "Cloudfoam Comfort sockliner, çokftan ve çokftan, yumuşak, soluk hava geçirgen kumaş",
-    sizes: ["8", "9", "10"],
-    colors: ["Beige", "Siyah", "Gri"],
+      'Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh',
+    sizes: ['8', '9', '10'],
+    colors: ['Beige', 'Black', 'Grey'],
 
     reviews: [],
   },
   {
-    name: "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe",
+    name: 'Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe',
     slug: toSlug(
-      "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe"
+      'Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe'
     ),
-    category: "Shoes",
-    brand: "Skechers",
-    images: ["/images/p43-1.jpg", "/images/p43-2.jpg"],
-    tags: ["best-seller"],
+    category: 'Shoes',
+    brand: 'Skechers',
+    images: ['/images/p43-1.jpg', '/images/p43-2.jpg'],
+    tags: ['best-seller'],
     isPublished: true,
     price: 99.99,
     listPrice: 0,
@@ -611,21 +612,21 @@ const products: IProductInput[] = [
     countInStock: 43,
     numSales: 72,
     description:
-      "Skechers Hands Free Slip-ins™: Summits - High Range ile rahatlık içinde adım atın. Exklüsif Heel Pillow™, ayakınızı güvenli bir şekilde tutar, bu vegan stil, benzersiz bir Skechers Slip-ins™ çıkış paneli, sabit kemerli bir kumaş üstü içerir",
-    sizes: ["8", "9", "10"],
-    colors: ["Mavi", "Siyah", "Gri"],
+      'Step into easy-wearing comfort with Skechers Hands Free Slip-ins™: Summits - High Range. Along with our Exclusive Heel Pillow™ holds your foot securely in place, this vegan style features a unique pop-up Skechers Slip-ins™ molded heel panel, a mesh upper with fixed laces',
+    sizes: ['8', '9', '10'],
+    colors: ['Navy', 'Black', 'Grey'],
 
     reviews: [],
   },
   {
-    name: "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes",
+    name: 'DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes',
     slug: toSlug(
-      "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes"
+      'DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes'
     ),
-    category: "Shoes",
-    brand: "DLWKIPV",
-    images: ["/images/p44-1.jpg", "/images/p44-2.jpg"],
-    tags: ["todays-deal"],
+    category: 'Shoes',
+    brand: 'DLWKIPV',
+    images: ['/images/p44-1.jpg', '/images/p44-2.jpg'],
+    tags: ['todays-deal'],
     isPublished: true,
     price: 36.99,
     listPrice: 56.9,
@@ -641,19 +642,19 @@ const products: IProductInput[] = [
     countInStock: 44,
     numSales: 72,
     description:
-      "Tasarım: Mesh vamp, havalandırma. Sol anti-kayma çentik tasarımı, darbe emniyeti ve anti-kayma. Ayak içi geniş ve yumuşak, sizin için iyi bir rahatlık deneyimi sunar",
-    sizes: ["8", "9", "10", "11", "12"],
-    colors: ["Kahverengi", "Siyah", "Gri"],
+      'Design: Mesh vamp, ventilation. Sole anti-slip groove design, shock absorption and anti-slip. The inside of the shoe is wide and soft, bringing you a good comfortable experience',
+    sizes: ['8', '9', '10', '11', '12'],
+    colors: ['Brown', 'Black', 'Grey'],
 
     reviews: [],
   },
   {
     name: "ASICS Men's GT-2000 13 Running Shoes",
     slug: toSlug("ASICS Men's GT-2000 13 Running Shoes"),
-    category: "Shoes",
-    brand: "ASICS",
-    images: ["/images/p45-1.jpg", "/images/p45-2.jpg"],
-    tags: ["new-arrival", "featured"],
+    category: 'Shoes',
+    brand: 'ASICS',
+    images: ['/images/p45-1.jpg', '/images/p45-2.jpg'],
+    tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 179.95,
     listPrice: 200,
@@ -669,9 +670,9 @@ const products: IProductInput[] = [
     countInStock: 45,
     numSales: 64,
     description:
-      "En az %50'si, çöp ve karbon emisyonunu azaltmak için çıkış malzemesiyle yapılmıştır",
-    sizes: ["8", "9", "10", "11"],
-    colors: ["Mavi", "Siyah", "Gri"],
+      "At least 50% of the shoe's main upper material is made with recycled content to reduce waste and carbon emissions",
+    sizes: ['8', '9', '10', '11'],
+    colors: ['Blue', 'Black', 'Grey'],
 
     reviews: [],
   },
@@ -680,10 +681,10 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes"
     ),
-    category: "Shoes",
-    brand: "Generic",
-    images: ["/images/p46-1.jpg", "/images/p46-2.jpg"],
-    tags: ["best-seller", "todays-deal"],
+    category: 'Shoes',
+    brand: 'Generic',
+    images: ['/images/p46-1.jpg', '/images/p46-2.jpg'],
+    tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 32.99,
     listPrice: 80,
@@ -699,13 +700,14 @@ const products: IProductInput[] = [
     countInStock: 46,
     numSales: 48,
     description:
-      "Cloudfoam Comfort sockliner, çokftan ve çokftan, yumuşak, soluk hava geçirgen kumaş",
-    sizes: ["8", "9", "10", "11"],
-    colors: ["Yeşil", "Siyah", "Gri"],
+      'Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh',
+    sizes: ['8', '9', '10', '11'],
+    colors: ['Green', 'Black', 'Grey'],
 
     reviews: [],
   },
-];
+]
+
 
 const data: Data = {
   headerMenus: [
