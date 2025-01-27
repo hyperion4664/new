@@ -73,6 +73,7 @@ body {
 }
 
 @layer utilities {
+  .highlight-link a,
   .web-page-content p {
     @apply py-2;
   }
