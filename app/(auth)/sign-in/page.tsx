@@ -21,39 +21,43 @@ export default async function SignIn(props: {
     callbackUrl: string;
   }>;
 }) {
-  const searchParams = await props.searchParams;
+  try {
+    const searchParams = await props.searchParams;
+    const { callbackUrl = "/" } = searchParams;
 
-  const { callbackUrl = "/" } = searchParams;
+    const session = await auth();
+    if (session) {
+      return redirect(callbackUrl);
+    }
 
-  const session = await auth();
-  if (session) {
-    return redirect(callbackUrl);
+    return (
+      <div className="w-full">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Sign In</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div>
+              <CredentialsSignInForm />
+            </div>
+
+            <SeparatorWithOr />
+            <div className="mt-4">
+              <GoogleSignInForm />
+            </div>
+          </CardContent>
+        </Card>
+        <SeparatorWithOr>New to {APP_NAME}?</SeparatorWithOr>
+
+        <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
+          <Button className="w-full" variant="outline">
+            Create your {APP_NAME} account
+          </Button>
+        </Link>
+      </div>
+    );
+  } catch (error) {
+    console.error("SignIn Error:", error);
+    throw error; // Hata detaylarını görmek için
   }
-
-  return (
-    <div className="w-full">
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Sign In</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div>
-            <CredentialsSignInForm />
-          </div>
-
-          <SeparatorWithOr />
-          <div className="mt-4">
-            <GoogleSignInForm />
-          </div>
-        </CardContent>
-      </Card>
-      <SeparatorWithOr>New to {APP_NAME}?</SeparatorWithOr>
-
-      <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
-        <Button className="w-full" variant="outline">
-          Create your {APP_NAME} account
-        </Button>
-      </Link>
-    </div>
-  );
 }
