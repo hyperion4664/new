@@ -1,4 +1,4 @@
-import { auth } from '@/auth'
+'use client'
 
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
@@ -13,9 +13,11 @@ import { SignOut } from '@/lib/actions/user.actions'
 import { cn } from '@/lib/utils'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import { useSession } from 'next-auth/react'
 
-export default async function UserButton() {
-  const session = await auth()
+export default function UserButton() {
+  const { data: session } = useSession()
+  
   return (
     <div className='flex gap-2 items-center'>
       <DropdownMenu>
